@@ -1,0 +1,291 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nandu & Aparna | Wedding Invitation</title>
+<meta name="theme-color" content="#f8f5ef">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --cream: #f8f5ef;
+  --green: #647563;
+  --gold: #b49a68;
+  --ink: #33372f;
+  --muted: #77766e;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+}
+a { color: inherit; text-decoration: none; }
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 7%;
+  border-bottom: 1px solid #e7e0d4;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+.brand { color: var(--green); font-size: 18px; }
+.nav-link { color: var(--muted); }
+.hero {
+  min-height: 88vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 65px 20px;
+  background:
+    linear-gradient(#f8f5efc9,#f8f5efc9),
+    url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1800&q=85') center/cover;
+}
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 10px;
+  color: var(--green);
+}
+h1, h2, .names {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 400;
+}
+h1 {
+  font-size: clamp(55px, 10vw, 105px);
+  line-height: .95;
+  margin: 28px 0;
+}
+.amp { color: var(--gold); font-style: italic; }
+.hero p { color: var(--muted); line-height: 1.9; }
+.date-line {
+  margin-top: 35px;
+  color: var(--green);
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+.button {
+  display: inline-block;
+  border: 1px solid var(--green);
+  padding: 14px 25px;
+  margin-top: 20px;
+  background: var(--green);
+  color: white;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+}
+.button:hover { background: #4e604e; }
+section { padding: 90px 7%; text-align: center; }
+.section-label {
+  color: var(--gold);
+  font-size: 10px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+h2 { font-size: clamp(38px, 6vw, 58px); margin: 15px 0 25px; }
+.intro { max-width: 520px; margin: auto; line-height: 2; color: var(--muted); }
+.details {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 25px;
+  max-width: 950px;
+  margin: 55px auto 0;
+}
+.detail {
+  padding: 30px 15px;
+  border-top: 1px solid #d9cfbc;
+  border-bottom: 1px solid #d9cfbc;
+}
+.detail h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 27px;
+  font-weight: 400;
+  color: var(--green);
+}
+.detail p { font-size: 13px; line-height: 1.9; color: var(--muted); }
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 14px;
+  max-width: 1050px;
+  margin: 40px auto 0;
+}
+.gallery img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+.gallery img:nth-child(2) { margin-top: 25px; }
+#rsvp { background: #eeebe3; }
+form { max-width: 500px; margin: 35px auto 0; text-align: left; }
+label { display: block; font-size: 12px; margin: 18px 0 8px; }
+input, select, textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #d8d0c2;
+  background: #faf8f3;
+  font: inherit;
+  color: var(--ink);
+  border-radius: 0;
+}
+textarea { min-height: 90px; resize: vertical; }
+form .button { width: 100%; }
+#response { text-align: center; color: var(--green); margin-top: 18px; }
+.map-note { font-size: 12px; color: var(--muted); margin-top: 12px; }
+footer {
+  padding: 45px 20px;
+  text-align: center;
+  font-size: 12px;
+  color: var(--muted);
+}
+footer strong {
+  display: block;
+  font: 32px 'Cormorant Garamond', serif;
+  color: var(--green);
+  margin-bottom: 10px;
+}
+@media(max-width:650px) {
+  nav { padding: 18px 5%; }
+  .nav-link { letter-spacing: 0; }
+  .hero { min-height: 78vh; }
+  section { padding: 65px 6%; }
+  .details { grid-template-columns: 1fr; gap: 18px; margin-top: 30px; }
+  .detail { padding: 15px; }
+  .gallery { grid-template-columns: 1fr 1fr; gap: 9px; }
+  .gallery img { height: 200px; }
+  .gallery img:nth-child(2) { margin-top: 0; }
+  .gallery img:last-child { grid-column: 1 / -1; height: 240px; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="brand" href="#">N & A</a>
+  <a class="nav-link" href="#rsvp">KINDLY RSVP ↗</a>
+</nav>
+
+<header class="hero">
+  <div>
+    <div class="eyebrow">Together with their families</div>
+    <h1>Nandu <span class="amp">&</span><br>Aparna</h1>
+    <p>Joyfully invite you to celebrate<br>
+       the beginning of their forever.</p>
+    <div class="date-line">OUR WEDDING · YOUR BLESSINGS</div>
+    <a class="button" href="#details">EXPLORE OUR INVITATION</a>
+  </div>
+</header>
+
+<section id="details">
+  <div class="section-label">A beautiful beginning</div>
+  <h2>Save the Date</h2>
+  <p class="intro">
+    With love in our hearts and blessings from our families,
+    we would be delighted to have you with us as we begin
+    this beautiful new chapter together.
+  </p>
+
+  <div class="details">
+    <div class="detail">
+      <div class="section-label">When</div>
+      <h3>[Wedding Date]</h3>
+      <p>[Day of the week]<br>[Time]</p>
+    </div>
+    <div class="detail">
+      <div class="section-label">Where</div>
+      <h3>[Venue Name]</h3>
+      <p>[Town / City]<br>[Full venue address]</p>
+    </div>
+    <div class="detail">
+      <div class="section-label">Celebration</div>
+      <h3>Our Forever</h3>
+      <p>A day of love, laughter,<br>and cherished memories.</p>
+    </div>
+  </div>
+
+  <a class="button" href="https://maps.google.com/?q=YOUR+VENUE"
+     target="_blank" rel="noopener">OPEN VENUE MAP ↗</a>
+  <p class="map-note">Replace the sample map link with your actual venue location.</p>
+</section>
+
+<section id="gallery">
+  <div class="section-label">Little moments, big love</div>
+  <h2>Our Gallery</h2>
+  <p class="intro">A few beautiful frames from our journey.</p>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=700&q=80" alt="Wedding couple">
+    <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=700&q=80" alt="Wedding celebration">
+    <img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&w=1000&q=80" alt="Wedding details">
+  </div>
+  <p class="map-note">Replace these sample photos with your own favourite pictures.</p>
+</section>
+
+<section id="rsvp">
+  <div class="section-label">We hope you can join us</div>
+  <h2>Kindly RSVP</h2>
+  <p class="intro">
+    Your presence will make our day even more special.
+    Please let us know if you can celebrate with us.
+  </p>
+
+  <form id="rsvpForm">
+    <label for="guest">Your full name</label>
+    <input id="guest" name="guest" required placeholder="Enter your name">
+
+    <label for="attendance">Will you be joining us?</label>
+    <select id="attendance" name="attendance" required>
+      <option value="">Please select</option>
+      <option value="Joyfully accepts">Joyfully accepts</option>
+      <option value="Regretfully declines">Regretfully declines</option>
+    </select>
+
+    <label for="guests">Number of guests</label>
+    <select id="guests" name="guests">
+      <option value="1">1 guest</option>
+      <option value="2">2 guests</option>
+      <option value="3">3 guests</option>
+      <option value="4">4 guests</option>
+      <option value="5+">5 or more guests</option>
+    </select>
+
+    <label for="message">A little note for us (optional)</label>
+    <textarea id="message" name="message" placeholder="Your wishes for the couple..."></textarea>
+
+    <button class="button" type="submit">SEND RSVP ♡</button>
+    <p id="response" role="status"></p>
+  </form>
+</section>
+
+<footer>
+  <strong>Nandu & Aparna</strong>
+  Made with love, for a day to remember.
+  <p>[Wedding Date] · [Wedding Venue]</p>
+</footer>
+
+<script>
+document.getElementById('rsvpForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const guest = document.getElementById('guest').value.trim();
+  const attendance = document.getElementById('attendance').value;
+
+  if (!guest || !attendance) return;
+
+  document.getElementById('response').textContent =
+    'Thank you, ' + guest + '! Your response has been noted on this device. ♡';
+
+  // Demo only: this form does not send or save responses online.
+  // Connect a form backend to collect RSVPs from your guests.
+});
+</script>
+
+</body>
+</html>
